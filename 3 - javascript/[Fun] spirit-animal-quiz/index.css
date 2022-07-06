@@ -1,0 +1,540 @@
+/* -------------------CSS RESET START*------------------- */
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+body {
+ line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+ display:block;
+}
+nav ul {
+ list-style:none;
+}
+blockquote, q {
+ quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000; 
+ font-style:italic;
+ font-weight:bold;
+}
+del {
+ text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0; 
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+input, select {
+ vertical-align:middle;
+}
+
+@font-face {
+    font-family: Rlyehian;
+    src: url(assets/Rlyehian.ttf);
+}
+
+/* -------------------CSS RESET END------------------- */
+
+/* ----------------BUTTON RESET START---------------- */
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* ----------------BUTTON RESET END---------------- */
+
+
+/* ----------------WRITTEN CODE START---------------- */
+
+
+* {box-sizing: border-box;}
+
+html {
+  background: url("images/verychill.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Karla;
+}
+
+/* ----------------TITLE PAGE START---------------- */
+
+.titleBox {
+  position: relative;
+  top: 220px;
+  width: 500px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  color: lightblue;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgba(43, 56, 76, 0.65);
+  transition: 0.5s;
+}
+
+.startButton {
+  position: relative;
+  margin-top: 50px;
+  padding: 15px 50px 15px 50px;
+  transition: 0.5s;
+  border-radius: 4px;
+  background-color: #586ff4;
+  color: white;
+  font-weight:bold;
+}
+
+.startButton:hover {
+  background-color: #2b48ef;
+}
+
+.startButton:active {
+  background-color: #9028a0;
+}
+
+.disclaimer {
+  display: none;
+  color: blue;
+  font-weight: bold;
+  width: 300px;
+  position: relative;
+  top: 200px;
+  margin: auto;
+  text-align: center;
+  border: 1px dotted black;
+  font-size: 20px;
+}
+
+.footer {
+  display: block;
+  position: relative;
+  top: 230px;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .titleBox {
+  width: 200px;
+  margin: auto;
+  font-size: 20px;
+  }
+  
+  .startButton {
+  margin-top: 25px;
+  padding: 15px 20px 15px 20px;
+  font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+
+  .titleBox {
+  margin-top: 15px;
+  width: 150px;
+  margin: auto;
+  font-size: 15px;
+  }
+  
+  .startButton {
+  padding: 15px 20px 15px 20px;
+  font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 150px) {
+
+  .titleBox {
+  width: 50px;
+  margin: auto;
+  font-size: 6px;
+  }
+  
+  .startButton {
+  margin-top: 5px;
+  padding: 15px 5px 15px 5px;
+  font-size: 5px;
+  }
+}
+
+/* ----------------TITLE PAGE END---------------- */
+
+/* ----------------QUESTION PAGE START---------------- */
+
+.questionCounter {
+  position: absolute;
+  bottom: 150px;
+  left: 220px;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+.qNum {
+  color: gold;
+}
+
+.questionBox {
+  position: relative;
+  top: 50px;
+  border: 3px solid;
+  border-color: rgba(43, 56, 76, 0.65);
+  padding: 20px;
+  height: 150px;
+  width: 700px;
+  margin: auto;
+  font-weight: bold;
+  background-color: rgba(43, 56, 76, 0.65);
+  transition: 0.5s;
+}
+
+.questionText {
+  font-size: 22px;
+  color: #e8b29b;
+}
+
+.answerBox{
+  position: relative;
+  top: 90px;
+  margin: auto;
+  width: 700px;
+  transition: 0.5s;
+}
+
+.answers {
+  display: block;
+  border: 2px solid;
+  border-color: rgba(255, 200, 120, 0.65);
+  margin: 15px 0px 15px 0px;
+  padding: 10px;
+  background-color: rgba(255, 200, 120, 0.65);
+  font-family: Indie Flower;
+  font-weight: bold;
+}
+
+.answers:active {
+  background-color: rgba(255, 255, 120, 0.65);
+}
+
+.scoreBox{
+  display: inline-block;
+  position: relative;
+  left: 700px;
+  bottom: 87px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid;
+  border-color: rgba(255, 200, 120, 0.65);
+  border-radius: 4px;
+  background-color: rgba(255, 200, 120, 0.65);
+  text-align: center;
+  transition: 0.5s;
+}
+
+.submitButton {
+  display: block;
+  margin: auto;
+  position: relative;
+  border-radius: 4px;
+  transition: 0.5s;
+  background-color: rgba(49, 100, 183, 0.65);
+}
+
+.submitButton:hover {
+  background-color: rgba(49, 100, 200, 0.9);
+}
+
+.submitButton:active {
+  background-color: rgba(125, 66, 244, 0.8);
+}
+
+.returnButton {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  display:inline-block;
+  background-color: rgba(255, 100, 100, 0.65);
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.returnButton:hover {
+  background-color: rgba(255, 50, 50, 0.85);
+}
+
+.returnButton:active {
+  background-color: rgba(0, 0, 255, 1);
+}
+
+@media only screen and (max-width: 800px) {
+
+  .questionBox {
+    padding: 20px;
+    width: 300px;
+}
+  
+  .questionText {
+    font-size: 14px;
+}
+  
+  .answerBox{
+    width: 300px;
+    top: 50px;
+}
+
+  .answers {
+    margin: 15px 0 15px 0;
+    padding: 10px;
+}
+
+  .aText {
+    font-size: 12px;
+  }
+
+  .questionCounter {
+    padding: 10px;
+    font-size: 14px;
+}
+
+  .scoreBox{
+    display: block;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 120px;
+    height: 120px;
+    font-size: 12px;
+}
+
+}
+
+@media only screen and (max-width: 250px) {
+
+  .questionBox {
+    padding: 10px;
+    width: 100px;
+}
+  
+  .questionText {
+    font-size: 8px;
+}
+
+  .answerBox{
+    width: 100px;
+    top: 70px;
+}
+
+  .answers {
+    margin: 6px 0 6px 0;
+    padding: 2px;
+}
+   .aText {
+    font-size: 8px;
+  }
+
+  .submitButton {
+    float: left;
+}
+  .questionCounter {
+    padding: 10px;
+    font-size: 10px;
+}
+  .scoreBox{
+    width: 100px;
+    height: 100px;
+    font-size: 8px;
+}
+  
+}
+
+/* ----------------QUESTION PAGE END---------------- */
+
+/* ----------------RESULT PAGE START---------------- */
+
+.teaseBox {
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  font-size: 30px;
+  color: black;
+}
+
+.scoreBoxFinal{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  border-radius: 4px;
+  background-color: rgba(255, 200, 120, 0.65);
+  text-align: center;
+  transition: 0.5s;
+}
+
+.displayResult {
+  position: relative;
+  top: 20px;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+  height: 500px;
+}
+
+.animalTitle {
+  width: 40%;
+  margin:auto;
+  color: #871579;
+}
+
+.animalPic {
+  width: 60%;
+  border: 3px solid #fca13a;
+  border-radius: 4px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.analysis {
+  position: relative;
+  top: 30px;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  width: 400px;
+  margin: auto;
+  background-color: rgba(43, 56, 76, 0.65);
+}
+
+.tier {
+  color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .teaseBox {
+    width: 300px;
+    font-size: 15px;
+}
+
+  .analysis {
+    width: 200px;
+    font-size: 15px;
+}
+
+  .scoreBoxFinal{
+    position: relative;
+    top: 80%;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+  .traitText {
+    font-size: 10px;
+}
+
+}
+
+@media only screen and (max-width: 250px) {
+  .teaseBox {
+    width: 100px;
+}
+}
+/* ----------------RESULT PAGE END---------------- */
+
+
+/* -------HIDE PAGES TO SIMULATE FLOW------- */
+
+/*USER FLOW: STAGE ONE*/
+.startPage {
+
+}
+
+/*USER FLOW: STAGE TWO*/
+.questionPage {
+  display: none;
+}
+
+/*USER FLOW: STAGE THREE*/
+.resultPage {
+  display: none;
+}

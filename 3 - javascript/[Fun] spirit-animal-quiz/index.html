@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Click here for your Spirit Animal!">
+    <meta name="keywords" content="Spirit,Animal,Quiz,Bored">
+    <meta name="author" content="Joshua Stelly">
+    <meta name="viewport" content="width=device-width">
+    <title>Spirit Animal Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Karla" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header role="banner">
+      
+      <!-- [TITLE] PAGE STARTS HERE -->
+      <div class="startPage">
+        
+        <!-- This div contains the quiz title, displayed in large text -->
+        <div class="titleBox">
+          <h1>What's your spirit animal?</h1>
+          <p>(10 Questions)</p>
+          
+          <!-- This is the "START" button -->
+          <button class='startButton'>START</button>
+        </div>
+        
+        <!-- This div contains an optional disclaimer for those who may not like their result. It's probably disabled in index.css -->
+        <div class="disclaimer">
+          <p>For entertainment purposes only.</p>
+        </div>
+      </div>
+      <!-- [TITLE] PAGE ENDS HERE -->
+      
+    </header>
+    
+    <main role="main">
+
+      <!-- [QUESTION] PAGE STARTS HERE-->
+      <div class="questionPage">
+        
+        <!-- This is the "Return to Menu" Button at the top left of the screen. It takes the user back to the Main Menu. -->
+          <button type="submit" class="returnButton">Return to Menu</button>
+          
+        <!-- This div contains the actual question text, the question counter above it, and the score box to the right -->
+        <div class="questionBox">
+          <div class='questionText'>ERROR - Question not found!</div>
+          <div class ="questionCounter">
+            <h2>Question <span class="qNum">0</span> of 10</h2>
+          </div>
+          
+          <!-- The Score Box displays the variables increased by the user based on their answers. These variables will be used to choose their Spirit Animal. It's displayed as a form of feedback and contributes to the replayability of the quiz. -->
+          <div class="scoreBox">
+            <h3 class="traitText">Trait Scores</h3>
+            <p class="traitText">Intelligence: <span class="traitInt traitText">0</span></p>
+            <p class="traitText">Strength: <span class="traitStr traitText">0</span></p>
+            <p class="traitText">Madness: <span class="traitMad traitText">0</span></p>
+            <p class="traitText">Wisdom: <span class="traitWis traitText">0</span></p>
+            <p class="traitText">Charm: <span class="traitCha traitText">0</span></p>
+          </div>
+        </div>
+        
+        <!-- This div contains the selectable answers (vertically stacked) and the "Submit" button below them -->
+        <div class="answerBox">
+          <form role="listbox">
+            <fieldset>
+              <label class="answers" for="ans1">
+                <input type="radio" role ="option" aria-checked="false" id='ans1' name="answers" required>
+                <span class='a1 aText'></span>
+              </label>
+              <label class="answers" for="ans2">
+                <input type="radio" role ="option" aria-checked="false" id='ans2' name="answers" required>
+                <span class='a2 aText'></span>
+              </label>
+              <label class="answers" for="ans3">
+                <input type="radio" role ="option" aria-checked="false" id='ans3' name="answers" required>
+                <span class='a3 aText'></span>
+              </label>
+              <label class="answers" for="ans4">
+                <input type="radio" role ="option" aria-checked="false" id='ans4' name="answers" required>
+                <span class='a4 aText'></span>
+              </label>
+              <button type="submit" class="submitButton" role="button">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <!-- [QUESTION] PAGE ENDS HERE -->
+      
+      <!-- [RESULTS] PAGE STARTS HERE -->
+      <div class="resultPage">
+      
+        <!-- This is the "Return to Menu" Button from before, but the text is replaced with "Play Again?". It takes the user back to the Main Menu. -->
+        <button type="submit" class="returnButton">Play Again?</button>
+      
+        <!-- This is the Teaser text. It's text that's meant to get the user excited during the 0.5s before their result is displayed -->
+        <div class="teaseBox">
+          <h2>Your Spirit Animal is..</h2>
+          <h2 class="animalTitle">Not found!</h2>
+        </div>
+        
+        <!-- The scorebox from before is displayed to the right so the user can plan their next quiz playthrough. -->
+        <div class="scoreBoxFinal">
+            <h3 class="traitText">Trait Scores</h3>
+            <p class="traitText">Intelligence: <span class="traitInt">0</span></p>
+            <p class="traitText">Strength: <span class="traitStr">0</span></p>
+            <p class="traitText">Madness: <span class="traitMad">0</span></p>
+            <p class="traitText">Wisdom: <span class="traitWis">0</span></p>
+            <p class="traitText">Charm: <span class="traitCha">0</span></p>
+        </div>
+        
+        <!-- This div displays the user's Spirit Animal, using both the animal's scientific and common name imposed upon a picture in the background. Descriptor text is displayed at the bottom. -->
+        <div class="displayResult">
+          
+          <!-- This is the picture of the user's Spirit Animal. No refunds. -->
+          <img class="animalPic" role="image" src="images/error.jpg" alt="The picture says 'ERROR - SPIRIT ANIMAL IMAGE NOT FOUND'. The 'Who's That Pokemon?' screen, with a strange silhouette, from the popular 90's cartoon show 'Pokemon' is displayed. It looks like it might be a Bulbasaur.">
+          
+          <!-- This div offers a brief summary of the user's choices in reference to the Reasonable Person Standard. -->
+          <div class="analysis">
+            <h3>Analysis:</h3>
+            <h3 class = "tier"></h3>
+            <span class="anText">ERROR - ANALYSIS NOT FOUND</span>
+          </div>
+        </div>
+      </div>
+      <!-- [RESULTS] PAGE ENDS HERE -->
+    </main>
+    <footer>
+      <div class="footer" role="contactinfo">
+        <p>A lighthearted Thinkful Submission by Joshua Stelly.</p>
+        <a href="mailto:stelldevv@gmail.com" role="link" target="_blank">
+  stelldevv@gmail.com</a>.
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+

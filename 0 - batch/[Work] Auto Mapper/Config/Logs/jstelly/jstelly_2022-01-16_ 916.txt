@@ -1,0 +1,20 @@
+New connections will be remembered.
+
+
+Status       Local     Remote                    Network
+
+-------------------------------------------------------------------------------
+OK           G:        \\192.168.33.1\SHARE\SCATRANS 
+                                                Microsoft Windows Network
+OK           L:        \\192.168.33.1\SHARE\LABS Microsoft Windows Network
+Unavailable  M:        \\172.18.1.183\medstreaming\scanned_docs 
+                                                Microsoft Windows Network
+OK           O:        \\192.168.33.1\SHARE\Quickbooks 
+                                                Microsoft Windows Network
+OK           Q:        \\192.168.33.1\HP Backup\HPPEGASUS\D\QuickBooks 
+                                                Microsoft Windows Network
+OK           S:        \\192.168.33.1\SHARE\Shared 
+                                                Microsoft Windows Network
+OK           U:        \\192.168.33.1\SHARE\UVC  Microsoft Windows Network
+The command completed successfully.
+

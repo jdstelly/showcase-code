@@ -1,0 +1,30 @@
+====================
+SCRIPT MODULES
+====================
+NOTE: This section allows you to configure script behavior like drive logging.
+NOTE: Drive Logging - If ENABLED, will write the currently mapped drives for each user to the configured 'LOG_PATH'.
+--------------------
+module;logging;ENABLED
+====================
+LEGACY DRIVE REMOVAL
+====================
+EXAMPLE: legacy;"\\192.168.1.139\oldRootFolder"
+LAYOUT: legacy;drivePath
+NOTE: These drives will be removed when found on a user's profile.
+--------------------
+legacy;"\\192.168.33.1\oldFolder0"
+====================
+USER CONFIGURATIONS
+====================
+EXAMPLE (Shortcut): jstelly;shortcut;Desktop0.rdp
+LAYOUT (Shortcut): username;type;shortcutName
+EXAMPLE (Network Drive): jstelly;drive;S;"\\hostName\Shared\folder0";OPEN;Windows
+LAYOUT (Network Drive): username;type;driveLetter;drivePath;security;humanFriendlyName
+NOTE: Replace "username" with "global" to apply to all users.
+--------------------
+global;shortcut;MyHomeOffice.rdp
+global;drive;S;"\\192.168.5.1\ShareDrive";OPEN;Windows
+-----
+jsmith;shortcut;johnsKoolWebpage.lnk
+jsmith;drive;H;"\\192.168.5.1\ShareDrive\Scans";OPEN;Windows
+jsmith;drive;P;"\\192.168.5.15\NonDomainHostedDrive\PrivateFolder";SECURE;JonsPrivateFolder
