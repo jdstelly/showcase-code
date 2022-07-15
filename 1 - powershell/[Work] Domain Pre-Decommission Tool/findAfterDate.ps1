@@ -1,4 +1,4 @@
-# Declare discrepancies array to hold file data that we find have been written to after the target date.
+# Declare discrepancies array to hold files that we find have been written to after the target date.
 $discrepancies = @()
 
 # Prompt the user for the target date, store in variable.
